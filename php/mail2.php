@@ -9,8 +9,7 @@ require_once 'PHPMailer.php';
 
 $mail = new \PHPMailer\PHPMailer\PHPMailer();
 
-$mail->SMTPDebug = \PHPMailer\PHPMailer\SMTP::DEBUG_SERVER;
-$mail->SMTPDebug = 4; //Alternative to above constant
+
 $mail->isSMTP(); // Paramétrer le Mailer pour utiliser SMTP
 $mail->Host = 'smtp.gmail.com'; // Spécifier le serveur SMTP
 $mail->SMTPAuth = true; // Activer authentication SMTP
